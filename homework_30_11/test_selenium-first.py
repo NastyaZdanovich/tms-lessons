@@ -16,7 +16,6 @@ class TestSelenium:
     def test_selenium(self, driver, url, page_title):
         driver.get(url)
         page_title = driver.title
-        assert page_title in driver.title
         if 'Google' not in page_title:
             driver.save_screenshot(f'{page_title}.png')
             raise Exception('Something is wrong')
