@@ -16,3 +16,4 @@ class TestClass:
         all_synonyms = first_synonyms + second_synonyms + third_synonyms
         for word in all_synonyms:
             print(f'Another synonym is {word.text}.')
+
