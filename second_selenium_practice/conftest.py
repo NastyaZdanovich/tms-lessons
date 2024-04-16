@@ -7,3 +7,4 @@ def driver():
     options = webdriver.ChromeOptions()
     with webdriver.Chrome(options) as driver:
         yield driver
+    driver.quit()
